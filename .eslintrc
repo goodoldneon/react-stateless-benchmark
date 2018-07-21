@@ -1,0 +1,12 @@
+{
+  "settings": {
+    "ecmascript": 6,
+    "jsx": true
+  },
+  "env": {
+    "browser": true
+  },
+  "parser": "babel-eslint",
+  "extends": ["prettier/react"],
+  "plugins": ["import"]
+}
