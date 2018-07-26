@@ -4,21 +4,10 @@ import { ManyStatelessMount, ManyStatelessCall, ManyPure, ManyStateful } from '.
 
 ReactDOM.render(
   <div>
-    {Array(10)
-      .fill()
-      .map((x, i) => <ManyStatelessMount key={i} count={500} />)}
-
-    {Array(10)
-      .fill()
-      .map((x, i) => <ManyStatelessCall key={i} count={500} />)}
-
-    {Array(10)
-      .fill()
-      .map((x, i) => <ManyPure key={i} count={500} />)}
-
-    {Array(10)
-      .fill()
-      .map((x, i) => <ManyStateful key={i} count={500} />)}
+    <ManyStatelessMount count={5000} />
+    <ManyStatelessCall count={5000} />
+    <ManyPure count={5000} />
+    <ManyStateful count={5000} />
   </div>,
   document.getElementById('root'),
 );
